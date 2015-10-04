@@ -1,2 +1,187 @@
-﻿body {
+﻿* {
+    padding: 0;
+    margin: 0;
 }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(102, 224, 163);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+
+    .wrapper .addProducto {
+        width: 35%;
+        display: inline-block;
+        float: left;
+    }
+
+        .wrapper .addProducto .addBox {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            display: none;
+        }
+
+            .wrapper .addProducto .addBox .add_title {
+                font-size: 500%;
+                width: 100%;
+            }
+
+            .wrapper .addProducto .addBox .inputControl {
+                display: block;
+                margin-top: 30px;
+                width: 100%;
+            }
+
+                .wrapper .addProducto .addBox .inputControl label {
+                    font-size: 350%;
+                    width: 100%;
+                    display: block;
+                    padding-left: 5px;
+                }
+
+                .wrapper .addProducto .addBox .inputControl input[type=text] {
+                    font-family: 'Raleway', sans-serif;
+                    width: 75%;
+                    border: 0;
+                    height: 30px;
+                    font-size: 200%;
+                    padding: 5px;
+                    color: rgb(51,51,51);
+                }
+
+                    .wrapper .addProducto .addBox .inputControl input[type=text]:focus {
+                        outline: none;
+                    }
+
+                .wrapper .addProducto .addBox .inputControl textarea {
+                    width: 75%;
+                    border: 0;
+                    height: 90px;
+                    font-size: 200%;
+                    padding: 5px;
+                    color: rgb(51,51,51);
+                    font-family: 'Raleway', sans-serif;
+                }
+
+
+            .wrapper .addProducto .addBox button {
+                border: 0;
+                height: 50px;
+                font-size: 195%;
+                padding: 10px;
+                width: 25%;
+                margin-top: 30px;
+                background-color: white;
+                color: rgb(51,51,51);
+            }
+
+                .wrapper .addProducto .addBox button:hover {
+                    background-color: rgb(71, 157, 114);
+                    color: white;
+                }
+
+    .wrapper .manageProducto {
+        width: 60%;
+        display: inline-block;
+        float: left;
+        padding-left: 2%;
+    }
+
+        .wrapper .manageProducto .manage_title {
+            font-size: 500%;
+        }
+
+        .wrapper .manageProducto .search_box {
+            width: 100%;
+            padding-top: 30px;
+        }
+
+            .wrapper .manageProducto .search_box .search_label {
+                font-size: 220%;
+            }
+
+            .wrapper .manageProducto .search_box #search_input {
+                border: 0;
+                height: 30px;
+                font-size: 200%;
+                padding: 4px;
+                color: rgb(51,51,51);
+                margin-top: 4px;
+            }
+
+                .wrapper .manageProducto .search_box #search_input:focus {
+                    outline: none;
+                }
+
+        .wrapper .manageProducto .search_btn {
+            cursor: pointer;
+            display: inline-block;
+            background-color: white;
+            color: black;
+            height: 28px;
+            padding: 5px;
+            margin-left: -4px;
+            margin-top: -5px;
+        }
+
+        .wrapper .manageProducto > i {
+            font-size: 40px;
+            margin-left: 38%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+        .wrapper .manageProducto table {
+            border-collapse: collapse;
+            margin-top: 30px;
+            width: 80%;
+        }
+
+            .wrapper .manageProducto table thead th {
+                font-size: 250%;
+                font-weight: normal !important;
+                text-align: left;
+                padding-bottom: 20px;
+            }
+
+                .wrapper .manageProducto table thead th .btn_refresh {
+                    background: none;
+                    border: 0;
+                    cursor: pointer;
+                }
+
+                    .wrapper .manageProducto table thead th .btn_refresh:focus {
+                        outline: none;
+                    }
+
+
+                    .wrapper .manageProducto table thead th .btn_refresh i {
+                        font-size: 50px;
+                    }
+
+
+            .wrapper .manageProducto table tbody tr:nth-child(odd) {
+                background: none repeat scroll 0 0 white;
+                color: rgb(51,51,51);
+            }
+
+            .wrapper .manageProducto table tbody td {
+                padding: 10px;
+                font-size: 110%;
+            }
+
+            .wrapper .manageProducto table tbody tr td i {
+                cursor: pointer;
+            }

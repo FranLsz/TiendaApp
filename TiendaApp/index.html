@@ -4,10 +4,55 @@
     <title>Tienda Online</title>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/app.js"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="manageProducto">
+            <div class="manage_title">Administrar productos</div>
+            <div class="search_box">
+                <label for="search_input" class="search_label">Buscar</label>
+                <input type="text" id="search_input" />
+                <div class="search_btn" id="search_btn"><i class="material-icons">arrow_forward</i></div>
+
+            </div>
+            <div id="producto">
+                <table>
+                    <thead class="table_header">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
+                            <th><button type="button" id="btnRefresh" class="btn_refresh"><i class="material-icons">autorenew</i></button></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table_rows" id="data_location"></tbody>
+                </table>
+            </div>
+            <i id="showAddBox" class="material-icons">add_circle</i>
+        </div>
+        <div class="addProducto">
+            <div class="addBox" id="addBox">
+                <div class="add_title" id="add_title">Nuevo producto</div>
+                <input type="hidden" id="edit_id" value="" />
+                <div class="inputControl">
+                    <label for="add_nombre">Nombre</label>
+                    <input type="text" id="add_nombre" />
+                </div>
+                <div class="inputControl">
+                    <label for="add_precio">Precio</label>
+                    <input type="text" id="add_precio" />
+                </div>
+                <div class="inputControl">
+                    <label for="add_descripcion">Descripción</label>
+                    <textarea id="add_descripcion"></textarea>
+                </div>
+                <button type="button" id="btnAdd">Crear</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

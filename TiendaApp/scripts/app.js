@@ -1,1 +1,1 @@
-﻿
+﻿var url = "https://tiendaonline.azure-mobile.net/";
