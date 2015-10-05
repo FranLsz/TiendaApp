@@ -24,8 +24,8 @@ function pintarDatos(res) {
     for (var i = 0; i < data.length; i++) {
         salida += "<tr data-id='" + data[i].id + "'>";
         salida += "<td>" + data[i].nombre + "</td>";
-        salida += "<td>" + data[i].precio + "h</td>";
-        salida += "<td>" + data[i].descripcion + "h</td>";
+        salida += "<td>" + data[i].precio + "€</td>";
+        salida += "<td>" + data[i].descripcion + "</td>";
         salida += "<td>" + "<i id='btnEdit' onclick='showEditPanel(this)' class='material-icons'>mode_edit</i> <i id='btnRemove' onclick='borrarDatos(this)' class='material-icons'>delete</i> " + "</td>";
         salida += "</tr>";
     }
